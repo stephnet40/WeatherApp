@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <script type="module" src="/src/main.ts"></script>
+
+    <header>
+      <form id="location-form">
+        <label for="location">Enter a city name:</label>
+        <input type="text" id="location" name="location">
+        <button id="submit">Submit</button>
+      </form>
+      <form id="temp-unit-form">
+        <div>
+        <input type="radio" id="fahrenheit" name="tempUnit" value="Fahrenheit" checked>
+        <label for="fahrenheit">Fahrenheit</label>
+        </div>
+        <div>
+        <input type="radio" id="celsius" name="tempUnit" value="Celsius">
+        <label for="celsius">Celsius</label>
+        </div>
+      </form>
+    </header>
+
+    <main>   
+      <div id="weather-info">
+        <h2 id="location-name"></h2>
+        <h3 id="temperature"></h3>
+        <h3 id="weather-conditions"></h3>
+      </div>
+
+      <!-- Add:                             -->
+      <!--      Day/Night Icon              --> 
+      <!--      Weather Conditions Icon     --> 
+            
+      <!-- Bonus: Local Storage to save last city name entered -->
+    </main>
+
+    <footer></footer>
+
+  </body>
+</html>

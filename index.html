@@ -29,19 +29,25 @@
 
     <main>   
       <div id="weather-info">
-        <h2 id="location-name"></h2>
-        <h3 id="temperature"></h3>
-        <h3 id="weather-conditions"></h3>
+               
+        <div id="current-conditions">
+          <div>
+            <p id="temperature">-10°F</p>
+            <p id="weather-conditions">Partly Cloudy</p>
+          </div>
+          <img id="weather-conditions-icon" src="weather-conditions/partly-cloudy-day.svg">
+        </div>
+        
+        <h2 id="location-name">West Des Moines, United States</h2>
       </div>
-
-      <!-- Add:                             -->
-      <!--      Day/Night Icon              --> 
-      <!--      Weather Conditions Icon     --> 
             
       <!-- Bonus: Local Storage to save last city name entered -->
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>Weather information obtained from <a href="https://open-meteo.com/">Open-Meteo</a></p>
+      <p>Weather icons created by <a href="https://github.com/Makin-Things/weather-icons/tree/main">Makin-Things</a></p>
+    </footer>
 
   </body>
 </html>

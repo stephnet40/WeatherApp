@@ -47,6 +47,8 @@ export function displayWeather(weatherDetails: WeatherResponse) {
     const weatherConditionsIcon = document.getElementById("weather-conditions-icon") as HTMLImageElement;
     weatherConditionsIcon.src = "";
     weatherConditionsIcon.src = icon;
+    weatherConditionsIcon.width = 200;
+    weatherConditionsIcon.height = 170;
 }
 
 export function setTempUnit(selectedUnit: string) {
